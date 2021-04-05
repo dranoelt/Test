@@ -54,7 +54,8 @@ class MainActivity : AppCompatActivity() {
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .setColor(argb(1,28,255,245))
-                .setBadgeIconType(NotificationCompat.BADGE_ICON_LARGE)
+                .setBadgeIconType(NotificationCompat.BADGE_ICON_SMALL)
+                .setNumber(2)
 
                 .setStyle(NotificationCompat.MessagingStyle(texts.toString())
                     .addMessage("Hi, who are you?",System.currentTimeMillis()-30000,texts.toString())
