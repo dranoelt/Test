@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="channelName">Notif</string>
+    <string name="channelName">Message</string>
     <string name="description">Test Notification</string>
 </resources>
