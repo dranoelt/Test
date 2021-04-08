@@ -1,8 +1,6 @@
 package com.example.myapplication
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.app.PendingIntent
+import android.app.*
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
@@ -11,10 +9,12 @@ import android.media.AudioAttributes
 import android.media.RingtoneManager
 import android.os.Build
 import android.os.Bundle
+import android.widget.TimePicker
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
 import java.util.*
 
 
@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         val email = binding.editTextTextPersonName2.text
         val umur = binding.editTextTextPersonName3.text
         val btn = binding.button
+
 
         notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
