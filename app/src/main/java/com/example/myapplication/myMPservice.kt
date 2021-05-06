@@ -53,7 +53,10 @@ class myMPservice : Service(),
                 }
                 ACTION_START -> myMediaPlayer?.start()
                 ACTION_PAUSE -> myMediaPlayer?.pause()
-                ACTION_STOP -> myMediaPlayer?.stop()
+                ACTION_STOP -> {
+                    myMediaPlayer?.stop()
+                    Toast.makeText(this, "Player Stop", Toast.LENGTH_SHORT).show()
+                }
             }
         }
         return flags
@@ -64,7 +67,7 @@ class myMPservice : Service(),
     }
 
     override fun onCompletion(mp: MediaPlayer?) {
-        Toast.makeText(this, "Player Stop", Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onPrepared(mp: MediaPlayer?) {

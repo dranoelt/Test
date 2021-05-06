@@ -13,7 +13,6 @@ class MainActivity3 : AppCompatActivity() {
 
     private lateinit var binding: ActivityMain3Binding
     var myIntent : Intent? = null
-    var mMediaPlayer : myMPservice ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
