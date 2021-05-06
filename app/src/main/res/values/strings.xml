@@ -2,4 +2,8 @@
     <string name="app_name">My Application</string>
     <string name="channelName">Message</string>
     <string name="description">Test Notification</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="song">Music Player</string>
+    <string name="no">-</string>
 </resources>

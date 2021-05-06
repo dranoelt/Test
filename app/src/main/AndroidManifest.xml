@@ -9,19 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Reminder">
+        <service
+            android:name=".myMPservice"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity android:name=".MainActivity3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Reminder">
+
+        </activity>
 
         <receiver
             android:name=".AlarmReceiver"
             android:enabled="true"
             android:exported="true" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".MainActivity" >
 
         </activity>
         <activity android:name=".MainActivity2" />
