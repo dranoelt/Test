@@ -12,7 +12,6 @@ const val ACTION_STOP = "STOP"
 const val ACTION_CREATE = "CREATE"
 const val ACTION_PAUSE = "PAUSE"
 const val ACTION_START = "START"
-const val ACTION_LENGTH = "LENGTH"
 
 class myMPservice : Service(),
     MediaPlayer.OnPreparedListener,
